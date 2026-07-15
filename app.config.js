@@ -11,7 +11,10 @@ module.exports = {
       versionCode: 1,
     },
     plugins: [
-      "./plugins/withAdMobAppId",
+      [
+        "react-native-google-mobile-ads",
+        { androidAppId: "ca-app-pub-6270419797977534~6448920479" },
+      ],
       [
         "expo-build-properties",
         {
