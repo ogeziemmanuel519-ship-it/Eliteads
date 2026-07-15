@@ -5,6 +5,9 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#0F1115"
+    },
     "android": {
       "package": "com.eliteEarn.app",
       "versionCode": 1
@@ -13,7 +16,7 @@
       [
         "react-native-google-mobile-ads",
         {
-          "androidAppId":"ca-app-pub-6270419797977534~6448920479"
+          "androidAppId": "ca-app-pub-6270419797977534~6448920479"
         }
       ]
     ]
