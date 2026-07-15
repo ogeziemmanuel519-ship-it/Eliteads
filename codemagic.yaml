@@ -4,8 +4,6 @@ workflows:
     max_build_duration: 60
     environment:
       node: 20
-      vars:
-        EXPO_TOKEN: $EXPO_TOKEN
     scripts:
       - npm install
       - npx expo install --fix
