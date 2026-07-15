@@ -5,9 +5,10 @@ workflows:
     environment:
       node: 20
     scripts:
+      - rm -rf node_modules package-lock.json
       - npm install
       - npx expo install --fix
-      - npx expo prebuild -p android
+      - npx expo prebuild -p android --clean
       - cd android && ./gradlew assembleRelease
     artifacts:
       - android/app/build/outputs/**/*.apk
