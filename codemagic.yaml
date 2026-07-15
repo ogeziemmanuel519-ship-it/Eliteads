@@ -8,6 +8,7 @@ workflows:
         EXPO_TOKEN: $EXPO_TOKEN
     scripts:
       - npm install
+      - npx expo install --fix
       - npx expo prebuild -p android
       - cd android && ./gradlew assembleRelease
     artifacts:
